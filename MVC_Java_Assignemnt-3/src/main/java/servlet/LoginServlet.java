@@ -19,6 +19,8 @@ public class LoginServlet extends HttpServlet {
 	  protected void doPost(HttpServletRequest request, HttpServletResponse response)
 	            throws ServletException, IOException {
 		  
+		 
+		  
 		  
 	        String username = request.getParameter("username");
 	        String password = request.getParameter("password");
@@ -26,7 +28,7 @@ public class LoginServlet extends HttpServlet {
 	        try {
 	            if (logindao.isValidUser(username, password)) {
 	                // Redirect to the employee registration page
-	                response.sendRedirect("Registration.jsp?message=Successfully Signed in.");
+	                response.sendRedirect("Registration.jsp?message=Successfully Signed in."+password);
 	            } else {
 	                // Invalid credentials, show error message
 	                response.getWriter().println("Invalid username or password.");

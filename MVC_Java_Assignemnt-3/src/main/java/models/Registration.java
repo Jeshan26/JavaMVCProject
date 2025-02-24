@@ -4,14 +4,16 @@ package models;
 
 public class Registration {
     private String company;
-    private String payroll;
+    private int payroll;
     private String fullname;
     private String jobtitle;
     private String room;
     private String building;
     private String location;
     private String sector;
-    private String requestertel;
+    private int requestertel;
+    private String hashedpayroll;
+    private String hashedrequestertel;
 
     // Getters and Setters
     public String getCompany() {
@@ -22,11 +24,11 @@ public class Registration {
         this.company = company;
     }
 
-    public String getPayroll() {
+    public int getPayroll() {
         return payroll;
     }
 
-    public void setPayroll(String payroll) {
+    public void setPayroll(int payroll) {
         this.payroll = payroll;
     }
 
@@ -78,12 +80,30 @@ public class Registration {
         this.sector = sector;
     }
 
-    public String getRequesterTel() {
+    public int getRequesterTel() {
         return requestertel;
     }
 
-    public void setRequesterTel(String requestertel) {
+    public void setRequesterTel(int requestertel) {
         this.requestertel = requestertel;
     }
+    
+    public String getHashedPayroll() {
+        return hashedpayroll;
+    }
+
+    public void settHashedPayroll(String hashedpayroll) {
+        this.hashedpayroll = hashedpayroll;
+    }
+    
+    public String getHashedRequestertel() {
+        return hashedrequestertel;
+    }
+
+    public void setHashedRequestertel(String hashedrequestertel) {
+        this.hashedrequestertel = hashedrequestertel;
+    }
+
+    
 }
 

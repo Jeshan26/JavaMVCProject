@@ -21,7 +21,7 @@
             <input type="text" id="company" name="company" required>
 
             <label for="payroll">Payroll</label>
-            <input type="text" id="payroll" name="payroll" required>
+            <input type="number" id="payroll" name="payroll" required pattern="[0-9]+" title="Only numbers are allowed">
 
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullname" required>
