@@ -39,7 +39,9 @@ public class RegistrationDao   {
             ps.setString(8, employeeRegistration.getSector());
             ps.setString(9, employeeRegistration.getHashedRequestertel());
            
+            System.out.println(ps);
             // Execute the query
+            
             int rowsInserted = ps.executeUpdate();
 
             // If the row is inserted successfully, return true
